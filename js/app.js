@@ -144,7 +144,7 @@ if (form) {
 function deleteTask(taskID,deletedElement) {
     setStatus("Deleting Task...");
 
-    
+
     const deleteOverlay = document.createElement('div');
     deleteOverlay.classList.add('deleteOverlay');
 
@@ -197,7 +197,7 @@ function deleteTask(taskID,deletedElement) {
       deleteOverlay.remove();
       deletePopUp.remove();
       buttons.remove();
-      setTimeout(()=>{setStatus()}, 500);
+      setStatus();
     })
     
   
